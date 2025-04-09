@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
 
         {/* Contact Button */}
         <div className="hidden md:block">
-          <Button className="bg-datamind-primary hover:bg-datamind-primary/80 text-datamind-dark font-medium rounded-full">
+          <Button className="bg-black text-datamind-primary hover:bg-black/80 border border-datamind-primary/50 font-medium rounded-full">
             Let's Talk
           </Button>
         </div>
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
             >
               Contact
             </a>
-            <Button className="bg-datamind-primary hover:bg-datamind-primary/80 text-datamind-dark font-medium rounded-full w-full mt-2">
+            <Button className="bg-black text-datamind-primary hover:bg-black/80 border border-datamind-primary/50 font-medium rounded-full w-full mt-2">
               Let's Talk
             </Button>
           </div>

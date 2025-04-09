@@ -35,19 +35,10 @@ const Index: React.FC = () => {
       <Navbar />
       <main className="pt-20">
         <Hero />
-        <div className="relative">
-          <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-datamind-dark to-transparent"></div>
-          <TechStack />
-        </div>
+        <TechStack />
         <About />
-        <div className="relative">
-          <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-datamind-dark to-transparent"></div>
-          <Projects />
-        </div>
-        <div className="relative">
-          <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-datamind-dark to-transparent"></div>
-          <Contact />
-        </div>
+        <Projects />
+        <Contact />
       </main>
       <Footer />
     </div>

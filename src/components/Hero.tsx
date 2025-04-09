@@ -39,13 +39,13 @@ const Hero: React.FC = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-datamind-primary text-datamind-dark hover:bg-datamind-primary/80 rounded-full px-8 py-6 text-base font-medium">
+          <Button className="bg-black text-datamind-primary hover:bg-black/80 rounded-full px-8 py-6 text-base font-medium border border-datamind-primary/50">
             View Projects <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-          <Button variant="outline" className="border-datamind-primary text-datamind-primary hover:bg-datamind-primary/20 hover:border-datamind-primary rounded-full px-8 py-6 text-base font-medium">
+          <Button variant="outline" className="border-datamind-primary text-datamind-primary bg-black hover:bg-black/80 hover:border-datamind-primary rounded-full px-8 py-6 text-base font-medium">
             Get In Touch
           </Button>
-          <Button variant="outline" className="border-datamind-primary text-datamind-primary hover:bg-datamind-primary/20 hover:border-datamind-primary rounded-full px-8 py-6 text-base font-medium">
+          <Button variant="outline" className="border-datamind-primary text-datamind-primary bg-black hover:bg-black/80 hover:border-datamind-primary rounded-full px-8 py-6 text-base font-medium">
             <Download className="mr-2 h-4 w-4" /> Download CV
           </Button>
         </div>

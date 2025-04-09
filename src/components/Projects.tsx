@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="py-16 px-4 md:px-8">
+    <section id="projects" className="py-8 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-white">
           Featured <span className="text-datamind-primary">Projects</span>
@@ -60,12 +60,12 @@ const Projects: React.FC = () => {
               <CardFooter className="p-6 pt-0 flex gap-4">
                 <Button 
                   variant="outline" 
-                  className="border-datamind-primary text-datamind-primary hover:bg-datamind-primary/20 hover:border-datamind-primary rounded-full flex-1"
+                  className="border-datamind-primary text-datamind-primary bg-black hover:bg-black/80 hover:border-datamind-primary rounded-full flex-1"
                 >
                   <Github className="mr-2 h-4 w-4" /> GitHub
                 </Button>
                 <Button 
-                  className="bg-datamind-primary text-datamind-dark hover:bg-datamind-primary/80 rounded-full flex-1"
+                  className="bg-black text-datamind-primary hover:bg-black/80 rounded-full flex-1 border border-datamind-primary/50"
                 >
                   <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
                 </Button>
