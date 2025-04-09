@@ -35,11 +35,13 @@ const Index: React.FC = () => {
       <Navbar />
       <main className="pt-20">
         <Hero />
-        <div className="py-4">
+        <div className="py-2">
           <TechStack />
         </div>
-        <About />
-        <div className="py-4">
+        <div className="py-2">
+          <About />
+        </div>
+        <div className="py-2">
           <Projects />
         </div>
         <Contact />
