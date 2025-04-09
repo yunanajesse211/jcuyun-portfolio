@@ -21,11 +21,11 @@ const TechStack: React.FC = () => {
   ];
 
   return (
-    <section id="tech" className="py-8 px-4 md:px-8 relative">
+    <section id="tech" className="py-4 px-4 md:px-8 relative">
       <div className="max-w-6xl mx-auto">
-        <h3 className="text-center text-datamind-primary mb-8 text-2xl font-bold">TECH STACK</h3>
+        <h3 className="text-center text-datamind-primary mb-6 text-2xl font-bold">TECH STACK</h3>
         
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-4 mb-6">
           {technologies.map((tech, index) => (
             <div key={index} className="tech-pill flex items-center gap-2 hover:scale-105 transition-transform">
               {tech.icon}
@@ -34,7 +34,7 @@ const TechStack: React.FC = () => {
           ))}
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-black/30 border border-datamind-primary/30 rounded-lg p-6 backdrop-blur-sm hover:border-datamind-primary transition-all">
             <div className="w-12 h-12 bg-datamind-primary/20 rounded-full flex items-center justify-center mb-4">
               <BrainCircuit className="h-6 w-6 text-datamind-primary" />
