@@ -7,68 +7,89 @@ import { Github, ExternalLink } from "lucide-react";
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "Credit Card Fraud Detection in Nigeria",
-      description: "Pre-processed data by creating dummy instances of dataset and performing feature selection to identify key features influencing credit card frauds within Nigeria. Performed EDA using python visualization tools (matplotlib and seaborn) to get insights on key factors influencing fraud in Nigeria. Developed deep neural network models and ensemble models for predicting credit card financial fraud in Nigeria.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      github: "https://github.com/yunanajesse211/Credit-Card-Fraud-Detection-in-Nigeria",
-      demo: "#"
-    },
-    {
-      title: "Loan Default Prediction in Nigeria",
-      description: "Validated and cleaned categorical variables, addressing missing values to ensure data completeness and accuracy, and also documented the cleaning process to maintain transparency and consistency. Performed comprehensive EDA analysis using python visualization tools (matplotlib and seaborn), providing key insights for decision-making regarding the examined dataset. Developed a hybridised neural network model for predicting loan default cases in Nigeria.",
-      image: "https://images.unsplash.com/photo-1589666564459-93cdd3ab856a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      github: "https://github.com/yunanajesse211/Loan-Default-Prediction",
+      title: "Machine Learning Applications",
+      description: "A comprehensive collection of machine learning projects including implementation of various algorithms for classification, regression, and clustering problems. Features data preprocessing, feature engineering, model training, and evaluation techniques.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      github: "https://github.com/yunanajesse211/Machine-Learning-Applications",
       demo: "#"
     },
     {
       title: "Statistical Analysis with Python",
-      description: "Designed and implemented comprehensive statistical analysis techniques using Python's statistical libraries. Applied hypothesis testing, correlation analysis, and regression models to extract meaningful patterns from complex datasets. Created visualizations to communicate statistical findings to non-technical stakeholders.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Implementation of statistical analysis techniques using Python libraries. Includes hypothesis testing, correlation analysis, and regression models with visualizations for communicating findings effectively.",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       github: "https://github.com/yunanajesse211/Statistical-Analysis-with-Python",
       demo: "#"
     },
     {
-      title: "Machine Learning Applications",
-      description: "Implemented various machine learning algorithms for classification, regression, and clustering problems. Developed pipelines for data preprocessing, feature engineering, model training, and evaluation. Optimized hyperparameters for better model performance and reduced overfitting.",
-      image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      github: "https://github.com/yunanajesse211/Machine-Learning-Applications",
+      title: "Credit Card Fraud Detection",
+      description: "Machine learning project focused on detecting credit card fraud in Nigeria. Includes data preprocessing, feature selection, and implementation of deep neural networks and ensemble models for fraud prediction.",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      github: "https://github.com/yunanajesse211/Credit-Card-Fraud-Detection-in-Nigeria",
+      demo: "#"
+    },
+    {
+      title: "Loan Default Prediction",
+      description: "Project focused on predicting loan defaults using machine learning. Features comprehensive data cleaning, exploratory data analysis, and implementation of a hybrid neural network model.",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      github: "https://github.com/yunanajesse211/Loan-Default-Prediction",
+      demo: "#"
+    },
+    {
+      title: "Backend Development",
+      description: "A collection of backend development projects showcasing API development, database management, and server-side programming skills.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      github: "https://github.com/yunanajesse211/Backend-Development",
       demo: "#"
     }
   ];
 
   return (
-    <section id="projects" className="py-8 px-4 md:px-8">
+    <section id="projects" className="py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-white">
           Featured <span className="text-datamind-primary">Projects</span>
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-black/20 border-datamind-primary/30 hover:border-datamind-primary transition-all overflow-hidden">
+            <Card key={index} className="bg-black/20 border-datamind-primary/30 hover:border-datamind-primary transition-all duration-300 hover:shadow-lg hover:shadow-datamind-primary/20">
               <div className="h-48 overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-transform hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-white mb-4">{project.title}</h3>
-                <p className="text-white/80">{project.description}</p>
+                <p className="text-white/80 text-sm">{project.description}</p>
               </CardContent>
               <CardFooter className="p-6 pt-0 flex gap-4">
-                <Button 
-                  variant="outline" 
-                  className="border-datamind-primary text-datamind-primary bg-black hover:bg-black/80 hover:border-datamind-primary rounded-full flex-1"
+                <a 
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1"
                 >
-                  <Github className="mr-2 h-4 w-4" /> GitHub
-                </Button>
-                <Button 
-                  className="bg-black text-datamind-primary hover:bg-black/80 rounded-full flex-1 border border-datamind-primary/50"
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-datamind-primary text-datamind-primary bg-black hover:bg-black/80 hover:border-datamind-primary rounded-full"
+                  >
+                    <Github className="mr-2 h-4 w-4" /> GitHub
+                  </Button>
+                </a>
+                <a 
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1"
                 >
-                  <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                </Button>
+                  <Button 
+                    className="w-full bg-black text-datamind-primary hover:bg-black/80 rounded-full border border-datamind-primary/50"
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}
