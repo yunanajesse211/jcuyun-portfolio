@@ -2,44 +2,44 @@
 import React from 'react';
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, ArrowRight } from "lucide-react";
 
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "Machine Learning Applications",
-      description: "A comprehensive collection of machine learning projects including implementation of various algorithms for classification, regression, and clustering problems. Features data preprocessing, feature engineering, model training, and evaluation techniques.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      github: "https://github.com/yunanajesse211/Machine-Learning-Applications",
-      demo: "#"
+      title: "Exploratory Data Analysis on SBA loans",
+      description: "Comprehensive analysis of SBA loan data using Python and data science libraries. The project includes data cleaning, visualization, statistical analysis, and insights about loan patterns and trends.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+      github: "https://github.com/yunanajesse211/EDA-on-SBA-loans",
+      demo: "https://github.com/yunanajesse211/EDA-on-SBA-loans"
     },
     {
-      title: "Statistical Analysis with Python",
-      description: "Implementation of statistical analysis techniques using Python libraries. Includes hypothesis testing, correlation analysis, and regression models with visualizations for communicating findings effectively.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      github: "https://github.com/yunanajesse211/Statistical-Analysis-with-Python",
-      demo: "#"
+      title: "Communicating Data Findings",
+      description: "Data visualization project focusing on effective communication of findings through various plotting techniques and statistical analysis using Python libraries like Seaborn and Matplotlib.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      github: "https://github.com/yunanajesse211/communicate-data-findings",
+      demo: "https://github.com/yunanajesse211/communicate-data-findings"
     },
     {
-      title: "Credit Card Fraud Detection",
-      description: "Machine learning project focused on detecting credit card fraud in Nigeria. Includes data preprocessing, feature selection, and implementation of deep neural networks and ensemble models for fraud prediction.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      github: "https://github.com/yunanajesse211/Credit-Card-Fraud-Detection-in-Nigeria",
-      demo: "#"
+      title: "Investigate TMDb Movie Dataset",
+      description: "In-depth analysis of TMDb movie dataset investigating trends in movie production, success factors, and audience preferences using Python data analysis tools.",
+      image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1",
+      github: "https://github.com/yunanajesse211/investigate-TMDb-movie-dataset",
+      demo: "https://github.com/yunanajesse211/investigate-TMDb-movie-dataset"
     },
     {
-      title: "Loan Default Prediction",
-      description: "Project focused on predicting loan defaults using machine learning. Features comprehensive data cleaning, exploratory data analysis, and implementation of a hybrid neural network model.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-      github: "https://github.com/yunanajesse211/Loan-Default-Prediction",
-      demo: "#"
+      title: "SQL Project",
+      description: "Database management and analysis project using SQL, demonstrating complex queries, database design, and data manipulation skills.",
+      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+      github: "https://github.com/yunanajesse211/SQL-Project",
+      demo: "https://github.com/yunanajesse211/SQL-Project"
     },
     {
-      title: "Backend Development",
-      description: "A collection of backend development projects showcasing API development, database management, and server-side programming skills.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-      github: "https://github.com/yunanajesse211/Backend-Development",
-      demo: "#"
+      title: "Weather Trend Analysis",
+      description: "Analysis of global and local weather trends using SQL and Python, including data extraction, visualization, and pattern identification.",
+      image: "https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9",
+      github: "https://github.com/yunanajesse211/Weather-trend-Analysis",
+      demo: "https://github.com/yunanajesse211/Weather-trend-Analysis"
     }
   ];
 
@@ -87,12 +87,26 @@ const Projects: React.FC = () => {
                   <Button 
                     className="w-full bg-black text-datamind-primary hover:bg-black/80 rounded-full border border-datamind-primary/50"
                   >
-                    <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+                    <ExternalLink className="mr-2 h-4 w-4" /> View Project
                   </Button>
                 </a>
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <a 
+            href="https://github.com/yunanajesse211?tab=repositories" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button 
+              className="bg-datamind-primary text-black hover:bg-datamind-primary/90 rounded-full px-8 py-6 text-lg font-semibold"
+            >
+              See More Projects <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>
