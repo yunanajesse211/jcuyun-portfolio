@@ -7,39 +7,39 @@ import { Github, ExternalLink, ArrowRight } from "lucide-react";
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "Exploratory Data Analysis on SBA loans",
-      description: "Comprehensive analysis of SBA loan data using Python and data science libraries. The project includes data cleaning, visualization, statistical analysis, and insights about loan patterns and trends.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-      github: "https://github.com/yunanajesse211/EDA-on-SBA-loans",
-      demo: "https://github.com/yunanajesse211/EDA-on-SBA-loans"
+      title: "Data Wrangling and Analysis - WeRateDogs",
+      description: "Data wrangling project where I gathered, assessed, cleaned, and analyzed Twitter data from the WeRateDogs Twitter account to create interesting analyses and visualizations.",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      github: "https://github.com/yunanajesse211/Data-wrangling-and-Analysis-WeRateDogs",
+      demo: "https://github.com/yunanajesse211/Data-wrangling-and-Analysis-WeRateDogs"
     },
     {
-      title: "Communicating Data Findings",
-      description: "Data visualization project focusing on effective communication of findings through various plotting techniques and statistical analysis using Python libraries like Seaborn and Matplotlib.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-      github: "https://github.com/yunanajesse211/communicate-data-findings",
-      demo: "https://github.com/yunanajesse211/communicate-data-findings"
+      title: "Flight Delay Analysis",
+      description: "Analysis of flight delay data using Python and data visualization tools to identify patterns and predict delays in airline operations.",
+      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+      github: "https://github.com/yunanajesse211/flight_delay_analysis",
+      demo: "https://github.com/yunanajesse211/flight_delay_analysis"
     },
     {
-      title: "Investigate TMDb Movie Dataset",
-      description: "In-depth analysis of TMDb movie dataset investigating trends in movie production, success factors, and audience preferences using Python data analysis tools.",
-      image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1",
-      github: "https://github.com/yunanajesse211/investigate-TMDb-movie-dataset",
-      demo: "https://github.com/yunanajesse211/investigate-TMDb-movie-dataset"
+      title: "RWFD-Customer Segmentation",
+      description: "Implementing customer segmentation techniques for a retail company using Python to improve targeted marketing strategies.",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      github: "https://github.com/yunanajesse211/RWFD-Customer-Segmentation",
+      demo: "https://github.com/yunanajesse211/RWFD-Customer-Segmentation"
     },
     {
-      title: "SQL Project",
-      description: "Database management and analysis project using SQL, demonstrating complex queries, database design, and data manipulation skills.",
-      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
-      github: "https://github.com/yunanajesse211/SQL-Project",
-      demo: "https://github.com/yunanajesse211/SQL-Project"
+      title: "Loan Default Prediction",
+      description: "Machine learning model to predict loan defaults using historical data, featuring exploratory data analysis and model deployment.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      github: "https://github.com/yunanajesse211/Loan-Default-Prediction",
+      demo: "https://github.com/yunanajesse211/Loan-Default-Prediction"
     },
     {
-      title: "Weather Trend Analysis",
-      description: "Analysis of global and local weather trends using SQL and Python, including data extraction, visualization, and pattern identification.",
-      image: "https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9",
-      github: "https://github.com/yunanajesse211/Weather-trend-Analysis",
-      demo: "https://github.com/yunanajesse211/Weather-trend-Analysis"
+      title: "Customer Churn Prediction",
+      description: "Predictive modeling project to identify customers likely to churn, helping businesses implement retention strategies.",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+      github: "https://github.com/yunanajesse211/Customer-Churn-Prediction",
+      demo: "https://github.com/yunanajesse211/Customer-Churn-Prediction"
     }
   ];
 
