@@ -36,15 +36,25 @@ const Hero: React.FC = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-black text-datamind-primary hover:bg-black/80 rounded-full px-8 py-6 text-base font-medium border border-datamind-primary/50">
-            View Projects <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-          <Button variant="outline" className="border-datamind-primary text-datamind-primary bg-black hover:bg-black/80 hover:border-datamind-primary rounded-full px-8 py-6 text-base font-medium">
-            Get In Touch
-          </Button>
-          <Button variant="outline" className="border-datamind-primary text-datamind-primary bg-black hover:bg-black/80 hover:border-datamind-primary rounded-full px-8 py-6 text-base font-medium">
-            <Download className="mr-2 h-4 w-4" /> Download CV
-          </Button>
+          <a href="#projects">
+            <Button className="bg-black text-datamind-primary hover:bg-black/80 rounded-full px-8 py-6 text-base font-medium border border-datamind-primary/50">
+              View Projects <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
+          <a href="#contact">
+            <Button variant="outline" className="border-datamind-primary text-datamind-primary bg-black hover:bg-black/80 hover:border-datamind-primary rounded-full px-8 py-6 text-base font-medium">
+              Get In Touch
+            </Button>
+          </a>
+          <a 
+            href="https://docs.google.com/document/d/1bGmQwIRe9AkSpFUaKe8PS2ue5WrME4gf/edit?usp=sharing&ouid=112234798624604499584&rtpof=true&sd=true" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline" className="border-datamind-primary text-datamind-primary bg-black hover:bg-black/80 hover:border-datamind-primary rounded-full px-8 py-6 text-base font-medium">
+              <Download className="mr-2 h-4 w-4" /> Download CV
+            </Button>
+          </a>
         </div>
         
         <div className="mt-16">
