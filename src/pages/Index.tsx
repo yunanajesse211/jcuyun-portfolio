@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -30,21 +29,19 @@ const Index: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-animate relative">
+    <div className="min-h-screen bg-animate">
       <div className="absolute inset-0 grid-bg pointer-events-none"></div>
       <Navbar />
-      <main className="pt-20">
-        <Hero />
-        <div className="py-10">
+      <div className="relative">
+        <main className="pt-20 space-y-20">
+          <Hero />
           <TechStack />
-        </div>
-        <About />
-        <div className="py-10">
+          <About />
           <Projects />
-        </div>
-        <Contact />
-      </main>
-      <Footer />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 };

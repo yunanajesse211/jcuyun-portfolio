@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Download, ArrowRight } from "lucide-react";
@@ -12,10 +11,8 @@ const Hero: React.FC = () => {
           <span className="text-datamind-primary font-medium">Data Science & Machine Learning</span>
         </div>
         
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-          <span className="text-white">Yunana </span>
-          <span className="text-datamind-primary">Usheujawa </span>
-          <span className="text-white">Jesse</span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#9b87f5] via-[#D946EF] to-[#F97316]">
+          Yunana Usheujawa Jesse
         </h1>
         
         <div className="flex items-center justify-center mb-8">
