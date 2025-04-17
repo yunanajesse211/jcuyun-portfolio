@@ -13,8 +13,8 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    // Initialize EmailJS with your user ID
-    emailjs.init("rThF8OMDf7hDmdI-f");
+    // Initialize EmailJS with your public key
+    emailjs.init("y3MxCeEyG1yFM6Vre");
   }, []);
 
   return (

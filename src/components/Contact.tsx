@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -53,10 +54,10 @@ const Contact: React.FC = () => {
     setIsLoading(true);
 
     try {
-      // Use EmailJS
-      const serviceID = 'service_g2sfkbv';  // Replace with your actual EmailJS service ID
-      const templateID = 'template_j5y7dei'; // Replace with your actual EmailJS template ID
-      const userID = 'rThF8OMDf7hDmdI-f'; // Replace with your actual EmailJS user ID
+      // Use EmailJS with updated credentials
+      const serviceID = 'service_yz4pkt4';  // Updated service ID
+      const templateID = 'template_yol1f08'; // Updated template ID
+      const userID = 'y3MxCeEyG1yFM6Vre'; // Your public key
       
       const templateParams = {
         from_name: formData.name,
