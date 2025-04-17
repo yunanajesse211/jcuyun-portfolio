@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Github, Linkedin, Phone, MapPin, Send, Loader2 } from "lucide-react";
+import { Mail, Github, Phone, MapPin, Send, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useIsMobile } from '@/hooks/use-mobile';
 import emailjs from 'emailjs-com';
@@ -150,9 +149,6 @@ const Contact: React.FC = () => {
               <div className="mt-8 flex gap-4">
                 <a href="https://github.com/yunanajesse211" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-datamind-primary/20 flex items-center justify-center hover:bg-datamind-primary/40 transition-colors group">
                   <Github className="h-4 w-4 md:h-5 md:w-5 text-datamind-primary group-hover:scale-110 transition-transform" />
-                </a>
-                <a href="https://linkedin.com/in/yunana-jesse" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-datamind-primary/20 flex items-center justify-center hover:bg-datamind-primary/40 transition-colors group">
-                  <Linkedin className="h-4 w-4 md:h-5 md:w-5 text-datamind-primary group-hover:scale-110 transition-transform" />
                 </a>
               </div>
             </div>
