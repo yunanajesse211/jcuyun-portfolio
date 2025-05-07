@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
             </Button>
           </a>
           <a 
-            href="https://docs.google.com/document/d/1bGmQwIRe9AkSpFUaKe8PS2ue5WrME4gf/edit?usp=sharing&ouid=112234798624604499584&rtpof=true&sd=true" 
+            href="https://docs.google.com/document/d/1FmhagRtqfA8b-GmXE7ETxPaHp2jOkXKz/edit?usp=sharing&ouid=112234798624604499584&rtpof=true&sd=true" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full sm:w-auto"
